@@ -1,0 +1,12 @@
+[Unit]
+Description=RPI4 Neon Diagnostics Diagram Generator
+After=network.target
+
+[Service]
+Type=oneshot
+User=jeb
+WorkingDirectory=/home/jeb/rpi4_diagnostics_20260515
+ExecStart=/home/jeb/rpi4_diagnostics_20260515/src/generate_diagrams.sh
+
+[Install]
+WantedBy=multi-user.target

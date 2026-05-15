@@ -1,0 +1,11 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#39FF14", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="NEON-DIAG REPO STRUCTURE";
+    labelloc="t"; fontcolor="#39FF14"; fontname="Monospace";
+    
+    node [shape=component];
+    git -> src; git -> assets; git -> docs;
+
+}

@@ -1,0 +1,15 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#00FFFF", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="SYSTEM VITALS";
+    labelloc="t"; fontcolor="#00FFFF"; fontname="Monospace";
+    
+    node [shape=circle, color="#FF00FF"];
+    cpu [label="CPU\nLoad: 0.20"];
+    temp [label="Temp\n38.946 C", color="#39FF14"];
+    mem [label="RAM\n601/855 MB"];
+    disk [label="Disk\n15% Used"];
+    cpu -> temp; cpu -> mem; cpu -> disk;
+
+}

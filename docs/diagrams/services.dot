@@ -1,0 +1,15 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#39FF14", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="ACTIVE ARMADA";
+    labelloc="t"; fontcolor="#39FF14"; fontname="Monospace";
+    
+    node [shape=hexagon];
+    nginx [label="nginx:80"];
+    tor [label="tor:9001"];
+    go2rtc [label="go2rtc:1984"];
+    pi [label="RPI4", shape=doublecircle, color="#FFFF33"];
+    pi -> nginx; pi -> tor; pi -> go2rtc;
+
+}

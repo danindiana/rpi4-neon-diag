@@ -1,0 +1,11 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#FFFF33", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="BLUEPRINT LAYOUT";
+    labelloc="t"; fontcolor="#FFFF33"; fontname="Monospace";
+    
+    node [shape=folder];
+    etc -> nginx; etc -> tor; etc -> ssh;
+
+}

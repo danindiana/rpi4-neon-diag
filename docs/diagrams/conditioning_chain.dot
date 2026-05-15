@@ -1,0 +1,11 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#FF00FF", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="HOST CONDITIONING CHAIN";
+    labelloc="t"; fontcolor="#FF00FF"; fontname="Monospace";
+    
+    node [shape=cylinder];
+    apt -> fw -> nginx -> motd;
+
+}

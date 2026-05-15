@@ -1,0 +1,14 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#FF00FF", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="THE STORY SO FAR";
+    labelloc="t"; fontcolor="#FF00FF"; fontname="Monospace";
+    
+    node [shape=plaintext];
+    boot [label="Boot"];
+    stable [label="Stable: up 13 hours, 18 minutes"];
+    now [label="Current Status"];
+    boot -> stable -> now;
+
+}

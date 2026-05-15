@@ -1,0 +1,15 @@
+digraph G {
+    bgcolor="#0D0D0D";
+    node [style=filled, fillcolor="#1A1A1A", fontcolor="#00FFFF", color="#FFFF33", fontname="Monospace"];
+    edge [color="#00FFFF", fontname="Monospace"];
+    label="RPI4 NETWORKING PULSE";
+    labelloc="t"; fontcolor="#FFFF33"; fontname="Monospace";
+    
+    node [shape=box, color="#FF00FF"];
+    eth0 [label="eth0\n192.168.1.165"];
+    gateway [label="Gateway\n192.168.1.254", color="#FF3131"];
+    n64 [label="Neighbor\n192.168.1.64"];
+    eth0 -> gateway [label="default"];
+    eth0 -> n64;
+
+}

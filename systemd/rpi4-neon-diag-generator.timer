@@ -1,0 +1,10 @@
+[Unit]
+Description=Run RPI4 Neon Diagnostics Diagram Generator every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=rpi4-neon-diag-generator.service
+
+[Install]
+WantedBy=timers.target
